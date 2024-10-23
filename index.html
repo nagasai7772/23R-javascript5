@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            color:teal;
+            box-sizing: border-box;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        img{
+            box-shadow: 2px 2px 2px 2px goldenrod;
+            border-radius: 10px;
+        }
+        button:hover{
+            zoom: 150%;
+        }
+        body{
+            text-align: center;
+            background-color:black;
+        }
+        P{
+            color:yellow;
+
+        }
+        span{
+            color:aqua;
+        }
+        .newcolor{
+            color:mediumvioletred;
+        }
+    </style>
+</head>
+<body>
+<h3> For-in,for-of,arrays,objects</h3>
+
+  <button><a href="https://docs.google.com/document/d/1Aink7HEtraPSNypMrxWbGMkJzLjeQLF-HLQgrnotI_A/edit?usp=sharing">Click Here of explanation</a></button><br><br>
+  <img src="https://wallpapers.com/images/hd/java-script-coding-concept-illustration-n7mlh1p3z61gst83.jpg" alt="" height="150px"width="200px"><br><br>
+
+    <p>
+        1.SOLVE USING FOR-IN-LOOP<br>
+        var car={brand:'Toyota',model:'corolla',year:'2020'};<br>
+        for(names in car)<br>
+        {<br>
+           <span> console.log(`${names} : ${car[names].toUpperCase()}`);<br></span>
+            
+        }<br>
+    
+           <span class="newcolor">   O/P: brand:TOYOTA<br>
+                   model:COROLLA<br>
+                   year:2020<br></span>
+    </p>
+    <p>
+        2.var numbers=[1,2,3,4,5];<br>
+        for(position in numbers)<br>
+        {<br>
+        <span>    console.log(`${numbers[position]}-HI`);<br></span>
+            
+        }<br>
+     <span class="newcolor">   O/P:1-HI<br>
+             2-HI<br>
+             3-HI<br>
+             4-HI<br>
+             5-HI<br></span>
+    </p>
+    <p>
+        3.var fruits=['Apple','Banana','Cherry','Date'];<br>
+for(line in fruits)<br>
+{<br>
+   <span> console.log(`${line}-${fruits[line].toUpperCase()}`)<br></span>
+}<br>
+<span class="newcolor">O/P: 0-APPLE<br>
+     1-BANANA<br>
+     2-CHERRY<br>
+     3-DATE<br>
+    </span>
+    </p>
+    <p>
+        4.var obj={<br>
+            name:'John',age:'30',address:{<br>
+                city:'Los Angeles',state:'CA'<br>
+            }<br>
+        }<br>
+        obj.address.city="SanFrancisco";<br>
+      <span>  console.log(obj);<br></span>
+             
+       <span class="newcolor"> O/P: name:'John',age:'30',address:{<br>
+            city:'SanFrancisco',state:'CA'<br></span>
+        }<br>
+    </p>
+    <p>5.var car={brand:'Toyota',model:'corolla',year:'2020'};<br>
+        car.year="2022";<br>
+       <span> console.log(car);<br></span>
+               
+      <span class="newcolor">  O/P: {brand:'Toyota',model:'corolla',year:'2022'}<br></span>
+
+    </p>
+    <p>
+        6.var receipe={name:'pasta',servings:'2',ingredients:['noodels','sauce']};<br>
+receipe.ingredients[2]='Cheese';<br>
+<span>console.log(receipe);<br></span>
+<span class="newcolor">O/P:{name:'pasta',servings:'2',ingredients:['noodels','sauce','Cheese']};<br></span>
+    </p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
